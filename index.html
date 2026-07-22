@@ -1,12 +1,11 @@
 <!doctype html>
-<!-- NYLO INK — VERSIE 2.2 | Zelfstandig bestand met ingebouwde styling, scripts en afbeeldingen -->
 <html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#090909">
   <meta name="description" content="Nylo Ink tattoo studio in Den Haag. Persoonlijk tattoo-ontwerp, ruim tien jaar ervaring en eerlijk advies. Maak een afspraak via WhatsApp.">
-  <title>Nylo Ink — Tattoo Studio Den Haag | Versie 2.2</title>
+  <title>Nylo Ink — Tattoo Studio Den Haag</title>
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzA4MDgwOCIvPgogIDxwYXRoIGQ9Ik0xNyA0OFYxNmg4bDE0IDIwVjE2aDh2MzJoLThMMjUgMjh2MjB6IiBmaWxsPSIjZDhmZjNlIi8+Cjwvc3ZnPgo=" type="image/svg+xml">
 <style>
 :root {
@@ -673,35 +672,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .route-banner strong { font-size: clamp(27px, 8vw, 48px); letter-spacing: -.055em; line-height: .95; }
 .route-banner i { font-style: normal; font-size: 29px; }
 
-.site-footer { padding: 48px 0 105px; background: #030303; }
+.site-footer { padding: 48px 0 58px; background: #030303; }
 .footer-grid { display: grid; gap: 31px; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 20px; }
 .footer-links a { text-transform: uppercase; font-size: 9px; font-weight: 800; letter-spacing: .11em; text-underline-offset: 5px; }
 .footer-grid p { margin: 0; color: #67635e; font-size: 9px; letter-spacing: .04em; }
 
-.mobile-contact-bar {
-  position: fixed;
-  z-index: 150;
-  inset: auto 0 0;
-  min-height: 62px;
-  display: grid;
-  grid-template-columns: .75fr 1.25fr;
-  background: var(--black);
-  border-top: 1px solid var(--line-light);
-  padding-bottom: env(safe-area-inset-bottom);
-}
-.mobile-contact-bar a {
-  padding: 0 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: .12em;
-}
-.mobile-contact-bar a + a { justify-content: space-between; background: var(--red); }
 
 .reveal { opacity: 1; transform: none; }
 .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .75s ease, transform .75s cubic-bezier(.2,.75,.25,1); }
@@ -736,14 +712,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
   .stats { padding-bottom: 0; }
   .stats-grid {
-    grid-template-columns: 180px minmax(0, 1fr);
+    grid-template-columns: 180px repeat(3, minmax(125px, 170px));
     column-gap: 38px;
-    row-gap: 30px;
+    row-gap: 0;
+    justify-content: start;
   }
   .stat-item {
-    grid-column: 2;
+    grid-column: auto;
     padding: 0;
   }
+  .stat-item:first-child { grid-column: 2; }
   .stat-label { font-size: 9px; }
   .work { padding-top: 72px; }
   .intro-grid { grid-template-columns: 180px 1fr; }
@@ -802,7 +780,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .intro-grid { grid-template-columns: 180px 1fr; gap: 45px; align-items: start; }
   .intro-copy { grid-column: 2; }
   .stats-grid {
-    grid-template-columns: 180px minmax(0, 1fr);
+    grid-template-columns: 180px repeat(3, minmax(135px, 180px));
     column-gap: 45px;
   }
   .work-heading { grid-template-columns: 180px 1fr 340px; align-items: end; }
@@ -833,7 +811,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .visit-card { margin-top: 4px; }
   .route-banner { padding-inline: max(50px, calc((100vw - var(--shell))/2)); }
   .site-footer { padding: 52px 0; }
-  .mobile-contact-bar { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1145,12 +1122,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
       <p>Previewconcept met stockbeelden. © <span data-year></span> Nylo Ink.</p>
     </div>
   </footer>
-
-  <div class="mobile-contact-bar">
-    <a href="https://www.google.com/maps/dir/?api=1&destination=Theresiastraat%2084%2C%202593%20AR%20Den%20Haag" target="_blank" rel="noopener">Route</a>
-    <a href="https://wa.me/31655797622?text=Hoi%20Nylo%20Ink%2C%20ik%20wil%20graag%20een%20afspraak%20maken." target="_blank" rel="noopener">Maak afspraak <span class="arrow-icon arrow-icon-up" aria-hidden="true"></span></a>
-  </div>
-
   <script>
 document.documentElement.classList.add('js');
 
