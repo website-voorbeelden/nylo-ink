@@ -1,12 +1,12 @@
 <!doctype html>
-<!-- NYLO INK — VERSIE 2.1 | Zelfstandig bestand met ingebouwde styling, scripts en afbeeldingen -->
+<!-- NYLO INK — VERSIE 2.2 | Zelfstandig bestand met ingebouwde styling, scripts en afbeeldingen -->
 <html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#090909">
   <meta name="description" content="Nylo Ink tattoo studio in Den Haag. Persoonlijk tattoo-ontwerp, ruim tien jaar ervaring en eerlijk advies. Maak een afspraak via WhatsApp.">
-  <title>Nylo Ink — Tattoo Studio Den Haag | Versie 2.1</title>
+  <title>Nylo Ink — Tattoo Studio Den Haag | Versie 2.2</title>
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzA4MDgwOCIvPgogIDxwYXRoIGQ9Ik0xNyA0OFYxNmg4bDE0IDIwVjE2aDh2MzJoLThMMjUgMjh2MjB6IiBmaWxsPSIjZDhmZjNlIi8+Cjwvc3ZnPgo=" type="image/svg+xml">
 <style>
 :root {
@@ -734,14 +734,18 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .visit { padding-top: 125px; }
   .intro { padding-bottom: 72px; }
 
-  .stats { padding-bottom: 100px; }
+  .stats { padding-bottom: 0; }
   .stats-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 52px;
+    grid-template-columns: 180px minmax(0, 1fr);
+    column-gap: 38px;
+    row-gap: 30px;
   }
-  .stat-item { padding: 0; }
+  .stat-item {
+    grid-column: 2;
+    padding: 0;
+  }
   .stat-label { font-size: 9px; }
-  .work { padding-top: 125px; }
+  .work { padding-top: 72px; }
   .intro-grid { grid-template-columns: 180px 1fr; }
   .intro-copy { grid-column: 2; }
   .work { padding-bottom: 135px; }
@@ -797,6 +801,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-side { position: absolute; z-index: 4; right: 34px; top: 50%; display: flex; gap: 45px; transform: translateY(-50%) rotate(90deg) translateX(50%); transform-origin: right center; color: #aaa6a0; font-size: 8px; font-weight: 800; letter-spacing: .16em; }
   .intro-grid { grid-template-columns: 180px 1fr; gap: 45px; align-items: start; }
   .intro-copy { grid-column: 2; }
+  .stats-grid {
+    grid-template-columns: 180px minmax(0, 1fr);
+    column-gap: 45px;
+  }
   .work-heading { grid-template-columns: 180px 1fr 340px; align-items: end; }
   .work-heading h2 { grid-column: 2; }
   .work-heading > p { grid-column: 3; }
@@ -970,7 +978,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
       <div class="section-shell">
         <div class="work-heading">
           <div class="section-label reveal"><span>02</span>Selected work</div>
-          <h2 class="reveal">INK WITH<br><em>CHARACTER.</em></h2>
+          <h2 class="reveal">INK WITH<br><em>ATTITUDE.</em></h2>
         </div>
 
         <div class="editorial-grid">
